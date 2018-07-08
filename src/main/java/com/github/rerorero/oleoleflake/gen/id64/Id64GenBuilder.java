@@ -181,7 +181,7 @@ public class Id64GenBuilder {
         }
 
         public TimestampFieldBuilder tickPerSecond() {
-            return withTimestampGenerator(TimestampGenerator.currentTimeMillisGenerator);
+            return withTimestampGenerator(TimestampGenerator.currentTimeSecondsGenerator);
         }
 
         public TimestampFieldBuilder withTimestampGenerator(TimestampGenerator<Long> generator) {

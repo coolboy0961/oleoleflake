@@ -335,7 +335,7 @@ public class IdBytesGenBuilder {
         }
 
         public TimestampFieldBuilder tickPerSecond() {
-            return withTimestampGenerator(TimestampGenerator.currentTimeMillisGenerator);
+            return withTimestampGenerator(TimestampGenerator.currentTimeSecondsGenerator);
         }
 
         public TimestampFieldBuilder withTimestampGenerator(TimestampGenerator<Long> generator) {
